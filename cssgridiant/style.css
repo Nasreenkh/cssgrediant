@@ -1,0 +1,273 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    header {
+        background-color: white;
+        padding: 20px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+        width: 100%;
+        position: relative;
+    }
+    
+    .logoimg {
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        left: 20px;              
+        top: 20px;
+    }
+    
+    .top-heading {
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center; 
+        gap: 15px;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+    
+    nav a {
+        text-decoration: underline black;
+        color: rgb(45, 11, 240);
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+        background-color: #960c0c;
+    }
+    
+
+
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, #20385e, #05a5f0);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.section-box-1, .section-box-2, .section-box-3 {
+    padding: 20px;
+    height: 380px;
+    border-radius: 5px;
+    width: 260px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #350ccc;
+}
+
+.section-box-1 {
+    background-color: #ffe4e1;
+
+}
+
+.section-box-1 p {
+   color: black;
+   font-size: 24px;
+
+}
+
+.section-box-1 h3 {
+    color: black;
+    font-size: 30px;
+ 
+ }
+ .section-box-1 li {
+    color: black;
+    font-size: 20px;
+ 
+ }
+.section-box-2 {
+    background-color: #e6e6fa;
+}
+.section-box-2 h3 {
+font-size: 30px;
+color: black;
+}
+.find-dentist-section {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.find-dentist-section h3 {
+    color: #0f0a0a;
+    text-align: center;
+}
+
+.find-dentist-section p {
+    font-size: 12px;
+    color: #070505;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.find-dentist-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.find-dentist-section label {
+    font-size: 10px;
+    color: #080707;
+    margin-bottom: 5px;
+}
+
+.find-dentist-section input, 
+.find-dentist-section select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.find-dentist-section button {
+    padding: 6px 8px;
+    background-color: #961414;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.find-dentist-section button:hover {
+    background-color: #037bb5;
+}
+
+.section-box-3 {
+    background-color: #e0f7fa;
+}
+.section-box-3 p {
+    color: black;
+    font-size: 24px;
+ 
+ }
+ 
+ .section-box-3 h3 {
+     color: black;
+     font-size: 30px;
+  
+  }
+  .section-box-3 li {
+    color: black;
+    font-size: 20px;
+ 
+ }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Responsive Design for Tablets (Max width: 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-box-1, .section-box-2, .section-box-3 {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoimg {
+        width: 100px;
+        height: 80px;
+    }
+
+    .top-heading {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Design for Mobile Phones (Max width: 320px) */
+@media (max-width: 320px) {
+    header {
+        padding: 10px;
+    }
+
+    .logoimg {
+        width: 80px;
+        height: 60px;
+    }
+
+    .top-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .banner {
+        height: 100px;
+        font-size: 18px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-box-1, .section-box-2, .section-box-3 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .find-dentist-section input, 
+    .find-dentist-section select {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .find-dentist-section button {
+        font-size: 9px;
+        padding: 4px;
+    }
+}
